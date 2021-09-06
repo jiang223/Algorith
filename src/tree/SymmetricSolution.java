@@ -6,15 +6,21 @@ class TreeNode {
     int val = 0;
     TreeNode left = null;
     TreeNode right = null;
+    public TreeNode(int val) {
+        this.val = val;
+
+    }
+    public TreeNode() {
+    }
 }
 
 public class SymmetricSolution {
     @Test
     public  void test(){
-        TreeNode t=new TreeNode();
-        t.left=new TreeNode();
-        t.left.left=new TreeNode();
-        t.right=new TreeNode();
+        TreeNode t=new TreeNode(1);
+        t.left=new TreeNode(2);
+        t.left.left=new TreeNode(3);
+        t.right=new TreeNode(4);
         boolean a= isSymmetric(t);
     }
 
