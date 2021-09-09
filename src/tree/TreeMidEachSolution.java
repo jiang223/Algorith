@@ -48,7 +48,6 @@ public class TreeMidEachSolution {
         return list.get(k-1);
     }
     public List dfs (TreeNode node,List<TreeNode> list) {
-
         if(node.left!=null){
             dfs(node.left,list);
         }
