@@ -2,11 +2,29 @@ package list;
 
 import org.junit.Test;
 
+import java.util.List;
+
 class ListNode {
     int val;
     ListNode next = null;
     public ListNode(int val) {
         this.val = val;
+    }
+    public static  ListNode make(int []val){
+        ListNode head =  new ListNode(val[0]);
+        ListNode node = head;
+        for(int i=1;i<val.length;i++){
+            node.next=new ListNode(val[i]);
+            node=node.next;
+        }
+        return  head;
+    }
+
+    public static  void printList(ListNode val){
+        while (val!=null){
+            System.out.print(val.val);
+            val=val.next;
+        }
     }
 }
 
