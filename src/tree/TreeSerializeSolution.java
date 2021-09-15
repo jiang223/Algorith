@@ -36,7 +36,7 @@ public class TreeSerializeSolution {
         t.right.left=new TreeNode(7);
         t.right.right=new TreeNode(9);
         System.out.println(Serialize(t));
-        t=Deserialize(Serialize(t));
+        t=Deserialize("8,1,2,9,1,2,3,5");
         System.out.println(Serialize(t));
     }
 
