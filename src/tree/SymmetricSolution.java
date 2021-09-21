@@ -12,6 +12,18 @@ class TreeNode {
     }
     public TreeNode() {
     }
+
+    @Override
+    public String toString() {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(val);
+        TreeNode node=right;
+        while (node!=null){
+            buffer.append(","+node.val);
+            node=node.right;
+        }
+        return buffer.toString();
+    }
 }
 
 public class SymmetricSolution {
